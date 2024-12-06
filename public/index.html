@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/output.css">
+    <title>Filtering</title>
+</head>
+
+<body class="bg-slate-100 h-screen">
+    <div>
+        
+        <!-- header -->
+        <div class="bg-sky-200 z-10 h-28 sm:h-16 w-full sticky flex font-mono  sm:justify-center top-0">
+            <div class="container mx-3 flex flex-col sm:flex-row items-start justify-center gap-2 sm:items-center">
+                <input id="input-search" class="px-3 py-2 rounded-md outline-none focus:ring hover:ring" type="text"
+                    placeholder="Search">
+                <select id="select-category" class="outline-none rounded-md px-3 py-2">
+
+                </select>
+                <span id="loadingSpinner" class="hidden absolute right-2 top-1/2 -translate-y-1/2">
+                    <svg class="animate-spin h-10 w-10 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24">
+                        <circle class="opacity-100" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+                        </circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+                    </svg>
+                </span>
+            </div>
+        </div>
+        <!-- header -->
+
+        <!-- display anime -->
+        <div id="display-anime-container"
+            class="mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 pb-20 gap-3 p-2">
+
+        </div>
+        <!-- display anime -->
+
+        <!-- button next page -->
+        <div class="  fixed bottom-0 w-full z-10">
+            <div id="button-container" class="container mx-auto flex justify-center gap-4 py-3">
+                <button
+                    class="btn previous-page-btn px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Previous
+                    Page</button>
+                <button class="btn next-page-btn px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 relative">
+                    Next Page
+
+                </button>
+            </div>
+        </div>
+        <!-- button next page -->
+
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
